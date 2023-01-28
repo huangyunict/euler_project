@@ -11,8 +11,8 @@ def solve_p458(n: int) -> int:
          [0, 5, 1, 1, 1, 1],
          [0, 0, 4, 1, 1, 1],
          [0, 0, 0, 3, 1, 1],
-         [0, 0, 0, 0, 2, 1]], dtype=int)
-    x = np.matrix([7, 0, 0, 0, 0, 0], dtype=int).transpose()
+         [0, 0, 0, 0, 2, 1]], dtype=np.uint64)
+    x = np.matrix([7, 0, 0, 0, 0, 0], dtype=np.uint64).transpose()
     result = sum(matrix_pow_mod(mat, n - 1, mod) * x) % mod
     return result.item((0, 0))
 

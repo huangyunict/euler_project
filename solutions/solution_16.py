@@ -1,3 +1,6 @@
+from assertpy import assert_that
+
+
 def solve_p16(n: int) -> int:
     result = 0
     while n > 0:
@@ -7,5 +10,7 @@ def solve_p16(n: int) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_p16(pow(2, 15)))  # 26
+    # Verify.
+    assert_that(solve_p16(pow(2, 15))).is_equal_to(26)
+    # Solution.
     print(solve_p16(pow(2, 1000)))  # 1366

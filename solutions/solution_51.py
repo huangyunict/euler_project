@@ -1,3 +1,4 @@
+from assertpy import assert_that
 import sympy
 
 
@@ -35,6 +36,8 @@ def solve_p51(n: int) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_p51(6))  # 13
-    print(solve_p51(7))  # 56003
+    # Verify.
+    assert_that(solve_p51(6)).is_equal_to(13)
+    assert_that(solve_p51(7)).is_equal_to(56003)
+    # Solution.
     print(solve_p51(8))  # 121313

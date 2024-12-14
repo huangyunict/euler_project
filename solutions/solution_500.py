@@ -1,3 +1,4 @@
+from assertpy import assert_that
 import sympy
 from sortedcontainers import SortedDict
 
@@ -27,5 +28,7 @@ def solve_p500(n: int) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_p500(4))  # 120
+    # Verify.
+    assert_that(solve_p500(4)).is_equal_to(120)
+    # Solution.
     print(solve_p500(500500))  # 35407281

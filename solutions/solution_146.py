@@ -1,3 +1,4 @@
+from assertpy import assert_that
 from sympy import isprime
 
 
@@ -25,6 +26,8 @@ def solve_p146(upper_bound: int) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_p146(11))  # 10
-    print(solve_p146(1000000))  # 1242490
+    # Verify.
+    assert_that(solve_p146(11)).is_equal_to(10)
+    assert_that(solve_p146(1000000)).is_equal_to(1242490)
+    # Solution.
     print(solve_p146(150000000))  # 676333270

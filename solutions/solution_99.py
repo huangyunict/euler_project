@@ -17,4 +17,5 @@ def solve_p99(file_name: str) -> int:
 
 
 if __name__ == '__main__':
+    # Solution.
     print(solve_p99('../resources/p099_base_exp.txt'))  # 709

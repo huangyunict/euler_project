@@ -8,4 +8,5 @@ def solve_p9(n: int) -> int:
 
 
 if __name__ == '__main__':
+    # Solution.
     print(solve_p9(1000))  # 31875000

@@ -1,3 +1,6 @@
+from assertpy import assert_that
+
+
 def get_partitions_dp(n: int, k: int, dp: dict) -> int:
     if n == 0:
         return 1
@@ -50,7 +53,9 @@ def solve_p76(n: int) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_p76_dp(5))  # 6
-    print(solve_p76_dp(100))  # 190569291
-    print(solve_p76(5))  # 6
+    # Verify.
+    assert_that(solve_p76_dp(5)).is_equal_to(6)
+    assert_that(solve_p76_dp(100)).is_equal_to(190569291)
+    assert_that(solve_p76(5)).is_equal_to(6)
+    # Solution.
     print(solve_p76(100))  # 190569291

@@ -55,4 +55,5 @@ def solve_p304(n: int) -> int:
 
 
 if __name__ == '__main__':
+    # Solution.
     print(solve_p304(100000))  # 283988410192

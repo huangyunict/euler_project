@@ -1,3 +1,4 @@
+from assertpy import assert_that
 import itertools
 
 
@@ -22,5 +23,7 @@ def solve_p24(n: int) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_p24_naive(1000000))  # 2783915460
+    # Verify.
+    assert_that(solve_p24_naive(1000000)).is_equal_to(2783915460)
+    # Solution.
     print(solve_p24(1000000))  # 2783915460

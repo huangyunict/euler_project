@@ -1,3 +1,6 @@
+from assertpy import assert_that
+
+
 def proper_divisors_sum(n: int) -> list[int]:
     result = [0, 0] + [1] * (n - 1)
     for p in range(2, n + 1):
@@ -39,6 +42,8 @@ def solve_p95(n: int) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_p95(10))  # 6
-    print(solve_p95(15472))  # 12496
+    # Verify.
+    assert_that(solve_p95(10)).is_equal_to(6)
+    assert_that(solve_p95(15472)).is_equal_to(12496)
+    # Solution.
     print(solve_p95(1000000))  # 14316

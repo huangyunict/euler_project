@@ -1,3 +1,6 @@
+from assertpy import assert_that
+
+
 def load_matrix(file_name: str) -> list[list[int]]:
     result = list()
     with open(file_name, 'r') as fp:
@@ -7,8 +10,10 @@ def load_matrix(file_name: str) -> list[list[int]]:
 
 
 def solve_sample() -> int:
-    mat = [[131, 673, 234, 103, 18], [201, 96, 342, 965, 150],
-           [630, 803, 746, 422, 111], [537, 699, 497, 121, 956],
+    mat = [[131, 673, 234, 103, 18],
+           [201, 96, 342, 965, 150],
+           [630, 803, 746, 422, 111],
+           [537, 699, 497, 121, 956],
            [805, 732, 524, 37, 331]]
     return min_path_sum(mat)
 
@@ -35,5 +40,7 @@ def solve_p81(file_name: str) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_sample())  # 2427
-    print(solve_p81('../resources/p081_matrix.txt'))  # 427337
+    # Verify.
+    assert_that(solve_sample()).is_equal_to(2427)
+    # Solution.
+    print(solve_p81('resources/p81_matrix.txt'))  # 427337

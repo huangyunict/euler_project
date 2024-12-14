@@ -1,3 +1,4 @@
+from assertpy import assert_that
 import math
 
 
@@ -18,4 +19,4 @@ def solve_p99(file_name: str) -> int:
 
 if __name__ == '__main__':
     # Solution.
-    print(solve_p99('../resources/p099_base_exp.txt'))  # 709
+    print(solve_p99('resources/p99_base_exp.txt'))  # 709

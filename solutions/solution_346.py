@@ -1,5 +1,5 @@
 def calc_rep_unit(b: int, k: int) -> int:
-    assert (pow(b,k)-1)%(b-1) == 0
+    assert (pow(b, k) - 1) % (b - 1) == 0
     return (pow(b, k) - 1) // (b - 1)
 
 

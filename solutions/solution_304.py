@@ -9,10 +9,10 @@ def matrix_multiply_mod(a: list[int], b: list[int], mod: int) -> list[int]:
     :param mod: the modulo.
     :return: the multiplication modulo operation for matrices.
     """
-    return [(a[0] * b[0] + a[1] * b[2]) % mod,
-            (a[0] * b[1] + a[1] * b[3]) % mod,
-            (a[2] * b[0] + a[3] * b[2]) % mod,
-            (a[2] * b[1] + a[3] * b[3]) % mod]
+    return [
+        (a[0] * b[0] + a[1] * b[2]) % mod, (a[0] * b[1] + a[1] * b[3]) % mod,
+        (a[2] * b[0] + a[3] * b[2]) % mod, (a[2] * b[1] + a[3] * b[3]) % mod
+    ]
 
 
 def matrix_pow_mod(a: list[int], b: int, mod: int) -> list[int]:

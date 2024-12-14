@@ -3,7 +3,8 @@ from sympy import continued_fraction_convergents, continued_fraction_iterator
 
 
 def solve_pell(d: int) -> int:
-    it = continued_fraction_convergents(continued_fraction_iterator(sympy.sqrt(d)))
+    it = continued_fraction_convergents(
+        continued_fraction_iterator(sympy.sqrt(d)))
     while True:
         r = next(it)
         if r.p * r.p - d * r.q * r.q == 1:

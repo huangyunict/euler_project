@@ -16,7 +16,7 @@ def calc_p(s: int, n: int) -> int:
 
 
 def solve_p601():
-    return sum([calc_p(i, 4 ** i) for i in range(1, 32)])
+    return sum([calc_p(i, 4**i) for i in range(1, 32)])
 
 
 if __name__ == "__main__":

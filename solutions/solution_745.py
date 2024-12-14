@@ -14,7 +14,7 @@ def solve_p745(n: int) -> int:
         while k * i <= max_k:
             # Small optimization.
             if 0 < last_index < k * i:
-                c[k] = (c[k] + mod - (max_k//k - i + 1)) % mod
+                c[k] = (c[k] + mod - (max_k // k - i + 1)) % mod
                 break
             c[k] = (c[k] + mod - c[k * i]) % mod
             i += 1

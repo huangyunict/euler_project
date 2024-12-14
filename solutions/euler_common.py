@@ -1,7 +1,10 @@
 import numpy as np
 
 
-def matrix_pow_mod(a: np.matrix, n: int, mod: int, dtype=np.uint64) -> np.matrix:
+def matrix_pow_mod(a: np.matrix,
+                   n: int,
+                   mod: int,
+                   dtype=np.uint64) -> np.matrix:
     """ Return a^n % mod in the matrix form.
 
     :param a: the input square matrix.
@@ -103,5 +106,4 @@ if __name__ == '__main__':
     assert multinomial_mod_prime(11, [1, 4, 4, 2], 1000000007) == 34650
     assert multinomial_mod_prime(11, [1, 4, 4], 1000000007) == 34650
     assert multinomial_mod_prime(11, [1, 4, 4], 17) == 34650 % 17
-    assert multinomial_mod_prime(3, [0,3,0], 1000000007) == 1
-
+    assert multinomial_mod_prime(3, [0, 3, 0], 1000000007) == 1

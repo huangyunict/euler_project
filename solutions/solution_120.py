@@ -3,7 +3,7 @@ from assertpy import assert_that
 
 def calc_r_max(a: int) -> int:
     r_max = 2
-    for n in range(1, a*2+2, 2):
+    for n in range(1, a * 2 + 2, 2):
         r = (2 * n * a) % (a * a)
         r_max = max(r_max, r)
     return r_max

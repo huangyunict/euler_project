@@ -8,7 +8,8 @@ def solve_p504(m: int) -> int:
         for b in all_range:
             for c in all_range:
                 for d in all_range:
-                    cnt = (a * b + b * c + c * d + d * a - gcd(a, b) - gcd(b, c) - gcd(c, d) - gcd(d, a) + 2) // 2
+                    cnt = (a * b + b * c + c * d + d * a - gcd(a, b) -
+                           gcd(b, c) - gcd(c, d) - gcd(d, a) + 2) // 2
                     root = isqrt(cnt)
                     if root * root == cnt:
                         result += 1

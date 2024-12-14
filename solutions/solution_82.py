@@ -1,3 +1,6 @@
+from assertpy import assert_that
+
+
 def load_matrix(file_name: str) -> list[list[int]]:
     result = list()
     with open(file_name, 'r') as fp:
@@ -44,5 +47,7 @@ def solve_p82(file_name: str) -> int:
 
 
 if __name__ == '__main__':
-    print(solve_sample())  # 994
-    print(solve_p82('../resources/p082_matrix.txt'))  # 260324
+    # Verify.
+    assert_that(solve_sample()).is_equal_to(994)
+    # Solution.
+    print(solve_p82('resources/p82_matrix.txt'))  # 260324

@@ -6,7 +6,8 @@ def load_words(file_name: str) -> list[str]:
     result = list()
     with open(file_name, 'r') as fp:
         for line in fp.readlines():
-            result.extend([x.replace('"', '') for x in line.strip().split(',')])
+            result.extend(
+                [x.replace('"', '') for x in line.strip().split(',')])
     result = [x for x in result]
     return result
 
@@ -93,4 +94,4 @@ if __name__ == '__main__':
     assert_that(largest_square(['CARE', 'RACE'])).is_equal_to(9216)
     assert_that(largest_square(['BROAD', 'BOARD'])).is_equal_to(18769)
     # Solution.
-    print(solve_p98('resources/p098_words.txt'))  # 18769
+    print(solve_p98('resources/p98_words.txt'))  # 18769

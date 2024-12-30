@@ -8,7 +8,8 @@
 
 <summary>Problems 1-100</summary> 
 
-| -------------------------- | ------- |
+| Problems                   | Problems |
+| -------------------------- | -------- |
 | [1](markdown/problem_1.md) | 2 |
 | 11  | 12 |
 

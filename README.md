@@ -4,3 +4,14 @@
 
 这里存放的是各题的解题思路和代码。
 
+<details>
+
+<summary>Problems 1-100</summary> 
+
+| [1](markdown/problem_1.md) | [2](markdown/problem_1.md)|
+| [11]()  | [12]() |
+
+<summary>Problems 101-200</summary> 
+
+</details>
+

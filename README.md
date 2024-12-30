@@ -6,9 +6,9 @@
 
 <details>
 
-<summary>Problems 1-100</summary> 
+<summary>Problems 1-100</summary>
 
-| .                          | . |
+| Problems 1-100                        ||
 | -------------------------- | -------- |
 | [1](markdown/problem_1.md) | 2 |
 | 11  | 12 |

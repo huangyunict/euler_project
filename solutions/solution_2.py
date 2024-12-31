@@ -11,6 +11,7 @@ def solve_p2_naive(n: int) -> int:
         a, b = b, a + b
     return result
 
+
 def solve_p2(n: int) -> int:
     a = 0
     b = 2

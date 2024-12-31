@@ -8,5 +8,6 @@ def solve_p1(n: int) -> int:
 if __name__ == '__main__':
     # Verify.
     assert_that(solve_p1(10)).is_equal_to(23)
+    assert_that(solve_p1(1000)).is_equal_to(233168)
     # Solution.
     print(solve_p1(1000))  # 233168

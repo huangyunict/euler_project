@@ -1,3 +1,6 @@
+from assertpy import assert_that
+
+
 def is_palindrome(n: int):
     s = str(n)
     return s == s[::-1]
@@ -46,5 +49,8 @@ def solve_p4() -> int:
 
 
 if __name__ == '__main__':
-    print(solve_p4_naive())  # 906609
+    # Verify.
+    assert_that(solve_p4_naive()).is_equal_to(906609)
+    assert_that(solve_p4()).is_equal_to(906609)
+    # Solution.
     print(solve_p4())  # 906609

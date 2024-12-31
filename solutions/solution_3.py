@@ -9,5 +9,6 @@ def solve_p3(n: int) -> int:
 if __name__ == '__main__':
     # Verify.
     assert_that(solve_p3(13195)).is_equal_to(29)
+    assert_that(solve_p3(600851475143)).is_equal_to(6857)
     # Solution.
     print(solve_p3(600851475143))  # 6857

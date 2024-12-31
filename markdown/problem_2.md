@@ -18,7 +18,7 @@
 
 ```python
 def solve_p2_naive(n: int) -> int:
-    a = 1
+    a = 0
     b = 1
     result = 0
     while b < n:

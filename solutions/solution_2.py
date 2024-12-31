@@ -23,8 +23,8 @@ def solve_p2(n: int) -> int:
 
 if __name__ == "__main__":
     # Verify.
-    assert_that(solve_p2(100)).is_equal_to(44)
     assert_that(solve_p2_naive(100)).is_equal_to(44)
+    assert_that(solve_p2(100)).is_equal_to(44)
     assert_that(solve_p2_naive(4000000)).is_equal_to(4613732)
     assert_that(solve_p2(4000000)).is_equal_to(4613732)
     # Solution.

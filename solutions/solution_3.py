@@ -1,8 +1,10 @@
+"""Solution for Project Euler problem 3: https://projecteuler.net/problem=3."""
 from assertpy import assert_that
 from sympy import primefactors
 
 
 def solve_p3(n: int) -> int:
+    """Solver for problem 3."""
     return primefactors(n)[-1]
 
 

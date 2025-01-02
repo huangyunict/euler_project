@@ -1,7 +1,9 @@
+"""Solution for Project Euler problem 2: https://projecteuler.net/problem=2."""
 from assertpy import assert_that
 
 
 def solve_p2_naive(n: int) -> int:
+    """Naive solver for problem 2."""
     a = 0
     b = 1
     result = 0
@@ -13,6 +15,7 @@ def solve_p2_naive(n: int) -> int:
 
 
 def solve_p2(n: int) -> int:
+    """Solver for problem 2."""
     a = 0
     b = 2
     result = a

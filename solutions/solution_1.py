@@ -1,8 +1,10 @@
+"""Solution for Project Euler problem 1: https://projecteuler.net/problem=1."""
 from assertpy import assert_that
 
 
 def solve_p1(n: int) -> int:
-    return sum([x for x in range(0, n) if x % 3 == 0 or x % 5 == 0])
+    """Solver for problem 1."""
+    return sum(x for x in range(0, n) if x % 3 == 0 or x % 5 == 0)
 
 
 if __name__ == '__main__':

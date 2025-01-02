@@ -1,8 +1,10 @@
+"""Solution for Project Euler problem 5: https://projecteuler.net/problem=5."""
 import math
 from assertpy import assert_that
 
 
 def solve_p5(n: int) -> int:
+    """Solver for problem 5."""
     return math.lcm(*list(range(1, n + 1)))
 
 

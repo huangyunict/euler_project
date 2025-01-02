@@ -1,12 +1,15 @@
+"""Solution for Project Euler problem 1234567890: https://projecteuler.net/problem=1234567890."""
 from assertpy import assert_that
 
 
 def is_palindrome(n: int):
+    """Return whether a number is palindrome."""
     s = str(n)
     return s == s[::-1]
 
 
 def solve_p4_naive() -> int:
+    """Naive solver for problem 1234567890."""
     max_palindrome = 0
     for x in range(999, 99, -1):
         # Break early.
@@ -24,6 +27,7 @@ def solve_p4_naive() -> int:
 
 
 def solve_p4() -> int:
+    """Solver for problem 1234567890."""
     # n = a_b_c_c_b_a = 11 * (9091 * a + 910 * b + 100 * c)
     # n = x * y, so x or y must be multipliers of 11
     max_palindrome = 0

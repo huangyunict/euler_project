@@ -2,7 +2,7 @@
 
 ## 问题
 
-**Summation of primes**
+**Summation of Primes**
 
 ![题目截图](../images/problem_10.png)
 
@@ -20,5 +20,5 @@ from sympy import sieve
 
 
 def solve_p10(n: int) -> int:
-    return sum([i for i in sieve.primerange(1, n+1)])
+    return sum(i for i in sieve.primerange(1, n + 1))
 ```

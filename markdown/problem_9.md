@@ -2,7 +2,7 @@
 
 ## 问题
 
-**Special Pythagorean triplet**
+**Special Pythagorean Triplet**
 
 ![题目截图](../images/problem_9.png)
 
@@ -10,7 +10,7 @@
 
 `31875000`
 
-## 暴力解法
+## 解法 1
 
 直接写程序暴力搜索，算法部分的 Python 代码如下，完整的代码见 [solution_9.py](../solutions/solution_9.py)。
 
@@ -26,7 +26,7 @@ def solve_p9(n: int) -> int:
 
 事实上，找到一组解是：`(200,375,425)`。
 
-## 数学解法
+## 解法 2
 
 根据[欧几里德公式](https://en.wikipedia.org/wiki/Pythagorean_triple#Generating_a_triple)，
 满足勾股定理`a*a+b*b=c*c`的三个正整数可以写成：

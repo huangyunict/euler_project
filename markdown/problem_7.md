@@ -2,7 +2,7 @@
 
 ## 问题
 
-**10001st prime**
+**10001st Prime**
 
 ![题目截图](../images/problem_7.png)
 

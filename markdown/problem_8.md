@@ -2,7 +2,7 @@
 
 ## 问题
 
-**Largest**
+**Largest Product in a Series**
 
 ![题目截图](../images/problem_8.png)
 

@@ -2,7 +2,7 @@
 
 ## 问题
 
-**Smallest multiple**
+**Smallest Multiple**
 
 ![题目截图](../images/problem_5.png)
 

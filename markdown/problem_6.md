@@ -2,7 +2,7 @@
 
 ## 问题
 
-**Sum square difference**
+**Sum Square Difference**
 
 ![题目截图](../images/problem_6.png)
 

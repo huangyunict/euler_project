@@ -2,7 +2,7 @@
 
 ## 问题
 
-**Largest palindrome product**
+**Largest Palindrome Product**
 
 ![题目截图](../images/problem_4.png)
 

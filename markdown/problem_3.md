@@ -2,7 +2,7 @@
 
 ## 问题
 
-**Largest prime factor**
+**Largest Prime Factor**
 
 ![题目截图](../images/problem_3.png)
 

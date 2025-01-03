@@ -23,9 +23,9 @@ MATRIX = [
     [20, 73, 35, 29, 78, 31, 90,  1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57,  5, 54],
     [ 1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52,  1, 89, 19, 67, 48],
 ]
- 
 
-def solve_p11(matrix: list[list[int]], n: int) -> int:
+
+def solve_p11(matrix: list[list[int]]) -> int:
     """Solver for problem 11."""
     max_prod = 0
     rows = len(matrix)
@@ -52,6 +52,6 @@ def solve_p11(matrix: list[list[int]], n: int) -> int:
 
 if __name__ == '__main__':
     # Verify.
-    assert_that(solve_p11(MATRIX, 4)).is_equal_to(70600674)
+    assert_that(solve_p11(MATRIX)).is_equal_to(70600674)
     # Solution.
-    print(solve_p11(MATRIX, 4))  # 70600674
+    print(solve_p11(MATRIX))  # 70600674

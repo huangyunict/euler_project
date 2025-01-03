@@ -6,8 +6,7 @@ def load_words(file_name: str) -> list[str]:
     result = list()
     with open(file_name, 'r') as fp:
         for line in fp.readlines():
-            result.extend(
-                [x.replace('"', '') for x in line.strip().split(',')])
+            result.extend([x.replace('"', '') for x in line.strip().split(',')])
     result = [x for x in result]
     return result
 

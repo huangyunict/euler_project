@@ -23,8 +23,7 @@ def solve_p500(n: int) -> int:
     # Calculate: result=\product_i prime[i]*(2^prime_counts[i]-1)
     result = 1
     for i in range(len(primes)):
-        result = result * pow(primes[i],
-                              pow(2, prime_counts[i]) - 1, mod) % mod
+        result = result * pow(primes[i], pow(2, prime_counts[i]) - 1, mod) % mod
     return result
 
 

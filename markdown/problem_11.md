@@ -17,7 +17,7 @@
 算法部分的 Python 代码如下，完整的代码见 [solution_11.py](../solutions/solution_11.py)。
 
 ```python
-def solve_p11(matrix: list[list[int]], n: int) -> int:
+def solve_p11(matrix: list[list[int]]) -> int:
     """Solver for problem 11."""
     max_prod = 0
     rows = len(matrix)

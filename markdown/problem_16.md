@@ -2,7 +2,7 @@
 
 ## 问题
 
-**Power digit sum**
+**Power Digit Sum**
 
 ![题目截图](../images/problem_16.png)
 
@@ -16,9 +16,5 @@
 
 ```python
 def solve_p16(n: int) -> int:
-    result = 0
-    while n > 0:
-        result += n % 10
-        n //= 10
-    return result
+    return sum(int(x) for x in str(n))
 ```

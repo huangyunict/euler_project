@@ -19,6 +19,9 @@
 完整的代码见 [solution_15.py](../solutions/solution_15.py)。
 
 ```python
-def solve_p15(n: int) -> int:
-    return 0
+from sympy import binomial
+
+
+def solve_p15(m: int, n: int) -> int:
+    return binomial(m + n, n)
 ```

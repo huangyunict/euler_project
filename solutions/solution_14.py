@@ -4,7 +4,7 @@ from assertpy import assert_that
 
 def solve_p14(max_n: int) -> int:
     """Solver for problem 14."""
-    # Value dp[k] stores the chain length given number k.
+    # Dict dp[k] stores the chain length given number k.
     dp = {1: 1}
     for i in range(1, max_n):
         curr = []
